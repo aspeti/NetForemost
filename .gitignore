@@ -1,2 +1,7 @@
-# Google App Engine generated folder
-appengine-generated/
+# Ignorar archivos de .NET
+backend/bin/
+backend/obj/
+
+# Ignorar archivos de Angular
+frontend/node_modules/
+frontend/dist/
