@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace Model
 {
@@ -26,7 +22,7 @@ namespace Model
         public string UsrFirstName  { get; set; }
         [Column("usr_last_name")]
         [StringLength(50)]
-        public string UsrLastName { get; set; }
+        public string? UsrLastName { get; set; }
         [Column("usr_email")]
         [StringLength(100)]
         [Required]

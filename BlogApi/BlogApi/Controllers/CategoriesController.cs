@@ -1,5 +1,6 @@
 ﻿using DAL;
 using DAL.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Model;
@@ -9,6 +10,7 @@ namespace BlogApi.Controllers
     /// <summary>
     /// Category Controller
     /// </summary>
+    [Authorize]
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
